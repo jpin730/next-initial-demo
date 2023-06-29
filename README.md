@@ -15,3 +15,7 @@ Run app locally
 ```
 yarn dev
 ```
+
+## Deployed app
+
+https://jpin730-next-initial-demo.vercel.app
