@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { FC } from 'react';
 
 interface Props {
   activeClass?: string;
@@ -8,12 +9,12 @@ interface Props {
   text: string;
 }
 
-export const ActiveLink = ({
+export const ActiveLink: FC<Props> = ({
   activeClass = 'active',
   className = '',
   href,
   text,
-}: Props) => {
+}) => {
   const { asPath } = useRouter();
 
   const classList = className.split(' ');

@@ -1,13 +1,13 @@
-import { ReactElement } from 'react';
+import { FC, ReactNode } from 'react';
 import Head from 'next/head';
 
 import { Navbar } from '@/components/Navbar';
 
 interface Props {
-  children: ReactElement;
+  children: ReactNode;
 }
 
-export const MainLayout = ({ children }: Props) => {
+export const MainLayout: FC<Props> = ({ children }) => {
   return (
     <>
       <Head>

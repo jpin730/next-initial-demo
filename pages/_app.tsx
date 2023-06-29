@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from 'react';
+import { FC, ReactElement, ReactNode } from 'react';
 import type { AppProps } from 'next/app';
 import { NextPage } from 'next';
 
@@ -12,7 +12,9 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-export default function App({ Component, pageProps }: AppPropsWithLayout) {
+const App: FC<AppPropsWithLayout> = ({ Component, pageProps }) => {
   const getLayout = Component.getLayout ?? ((page) => page);
   return getLayout(<Component {...pageProps} />);
-}
+};
+
+export default App;

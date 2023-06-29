@@ -6,10 +6,12 @@ const ContactPage: NextPageWithLayout = () => {
   return <h1>Contact Page</h1>;
 };
 
-ContactPage.getLayout = (page) => (
-  <MainLayout>
-    <LightLayout>{page}</LightLayout>
-  </MainLayout>
-);
+ContactPage.getLayout = (page) => {
+  return (
+    <MainLayout>
+      <LightLayout>{page}</LightLayout>
+    </MainLayout>
+  );
+};
 
 export default ContactPage;

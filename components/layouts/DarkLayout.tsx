@@ -1,10 +1,10 @@
-import { ReactElement } from 'react';
+import { FC, ReactNode } from 'react';
 
 interface Props {
-  children: ReactElement;
+  children: ReactNode;
 }
 
-export const DarkLayout = ({ children }: Props) => {
+export const DarkLayout: FC<Props> = ({ children }) => {
   return (
     <div
       className="bg-dark text-light p-3"
@@ -12,6 +12,7 @@ export const DarkLayout = ({ children }: Props) => {
     >
       <div className="container">
         {children}
+        <hr />
         <small className="text-light-emphasis">Dark layout</small>
       </div>
     </div>

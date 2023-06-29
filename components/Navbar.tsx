@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { ActiveLink } from './ActiveLink';
 
 import styles from './Navbar.module.css';
@@ -7,7 +8,7 @@ interface NavItem {
   href: string;
 }
 
-export const Navbar = () => {
+export const Navbar: FC = () => {
   const activeClass = `${styles.active}`;
   const className = 'text-white text-decoration-none py-3 px-4';
   const navItems: NavItem[] = [
