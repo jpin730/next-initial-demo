@@ -10,10 +10,22 @@ Install dependencies
 yarn
 ```
 
-Run app locally
+Run app locally for development
 
 ```
 yarn dev
+```
+
+Build docker image for production
+
+```
+docker build -t <IMAGE_TAG_NAME> .
+```
+
+Run docker image and expose on port=PORT
+
+```
+docker run --name=<CONTAINER_NAME> -p <PORT>:3000 -d <IMAGE_TAG_NAME>
 ```
 
 ## Deployed app
