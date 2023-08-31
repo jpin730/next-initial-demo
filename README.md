@@ -30,4 +30,4 @@ docker run --name=<CONTAINER_NAME> -p <PORT>:3000 -d <IMAGE_TAG_NAME>
 
 ## Deployed app
 
-https://jpin730-next-initial-demo.vercel.app
+https://next-initial-demo-jpin730.vercel.app
